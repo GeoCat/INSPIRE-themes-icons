@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'pf_square_sans_promedium';
   src: url('../fonts/pfsquaresanspro-medium-webfont.eot');
-  src: url('../fonts/pfsquaresanspro-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pfsquaresanspro-medium-webfont.woff2') format('woff2'), url('../fonts/pfsquaresanspro-medium-webfont.woff') format('woff'), url('../fonts/pfsquaresanspro-medium-webfont.ttf') format('truetype'), url('pfsquaresanspro-medium-webfont.svg#pf_square_sans_promedium') format('svg');
+  src: url('../fonts/pfsquaresanspro-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pfsquaresanspro-medium-webfont.woff2') format('woff2'), url('../fonts/pfsquaresanspro-medium-webfont.woff') format('woff'), url('../fonts/pfsquaresanspro-medium-webfont.ttf') format('truetype'), url('../fonts/pfsquaresanspro-medium-webfont.svg#pf_square_sans_promedium') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,9 +30,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*
+Experimenting multiline vertical middle
+http://stackoverflow.com/questions/9192389/css-single-or-multiple-line-vertical-align
 .cen {
   border-radius: 6px;
-  width: 9em;
+  width:9em;
   min-height: 34px;
   max-height: 34px;
   margin-right: 5px;
@@ -40,20 +43,21 @@
 }
 .cen p {
   font-size: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 2px;
-  width: 20em;
+  display:inline-block;
+  vertical-align:middle;
+  margin:0 0 0 2px;
+  width:20em;
   line-height: 1;
 }
 .cen::after {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 34px;
-  width: 0;
-  content: "\00A0";
-  overflow: hidden;
+  display:inline-block;
+  vertical-align:middle;
+  line-height:34px;
+  width:0;
+  content:"\00A0";
+  overflow:hidden;
 }
+*/
 .inspire-themes-icons-box,
 .iti-box {
   border-radius: 6px;
@@ -110,8 +114,8 @@
   color: white;
   margin-left: 4px;
 }
-.inspire-themes-icons-box.bu,
-.iti-box.bu,
+.inspire-themes-icons-box.bugia,
+.iti-box.bugia,
 .inspire-themes-icons-box.cp,
 .iti-box.cp,
 .inspire-themes-icons-box.gg,
@@ -197,7 +201,7 @@
   border-color: #b17f4a;
 }
 /* Icon colors */
-.iti-bu,
+.iti-bugia,
 .iti-cp,
 .iti-gg,
 .iti-gn,
@@ -263,7 +267,7 @@ An experiment of loop - need more work.
     .-((@i - 1));
   } .-;
 }*/
-.iti-bu:before {
+.iti-bugia:before {
   content: "\e606";
 }
 .iti-cp:before {
@@ -609,7 +613,7 @@ An experiment of loop - need more work.
 .iti-box.acr.br .label:before {
   content: "BR";
 }
-.iti-box.acr.bu .label:before {
+.iti-box.acr.bugia .label:before {
   content: "BU";
 }
 .iti-box.acr.cp .label:before {
@@ -700,10 +704,10 @@ An experiment of loop - need more work.
   content: "Addresses";
 }
 .iti-box.full.af-en .label:before {
-  content: "Agricultural and\A aquaculture facilities";
+  content: "Agricultural and aquaculture facilities";
 }
 .iti-box.full.am-en .label:before {
-  content: "Area management/restriction/\A regulation zones and reporting units";
+  content: "Area management/restriction/regulation zones and reporting units";
 }
 .iti-box.full.au-en .label:before {
   content: "Administrative units";
@@ -751,7 +755,7 @@ An experiment of loop - need more work.
   content: "Land use";
 }
 .iti-box.full.mf-en .label:before {
-  content: "Meteorological\A geographical features";
+  content: "Meteorological geographical features";
 }
 .iti-box.full.mr-en .label:before {
   content: "Mineral resources";
@@ -760,13 +764,13 @@ An experiment of loop - need more work.
   content: "Natural risk zones";
 }
 .iti-box.full.of-en .label:before {
-  content: "Oceanographic\A geographical features";
+  content: "Oceanographic geographical features";
 }
 .iti-box.full.oi-en .label:before {
-  content: "Orthoimaginary";
+  content: "Orthoimagery";
 }
 .iti-box.full.pd-en .label:before {
-  content: "Population distribution –\A demography";
+  content: "Population distribution – demography";
 }
 .iti-box.full.pf-en .label:before {
   content: "Production and industrial facilities";
